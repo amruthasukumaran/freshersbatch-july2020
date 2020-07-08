@@ -1,3 +1,7 @@
 This is a text file just to address assignments repository.
 I am changing this to commit in master.
+<<<<<<< HEAD
 There is a change in readme master......css 
+=======
+Now this is in css- assignments branch.
+>>>>>>> css-assignments
