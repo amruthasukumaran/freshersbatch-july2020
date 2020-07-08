@@ -9,5 +9,9 @@ Now this is in css- assignments branch.
 
 
 
+<<<<<<< HEAD
 New change in master .... js-assignments
 .
+=======
+This is javascript branch.
+>>>>>>> js-assignments
