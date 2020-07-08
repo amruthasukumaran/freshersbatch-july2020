@@ -1,1 +1,1 @@
-This is  text file just to address assignmentsa repository.
+This is a text file just to address assignments repository.
