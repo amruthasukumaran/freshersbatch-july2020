@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+*{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+h1{
+background-color:cornflowerblue;
+height:50px;
+padding-bottom: 5px ;
+}
+
+#d1{
+	
+	background-color:skyblue;
+	height:30px;
+	}
+
+#d2{
+	background-color:skyblue;
+	height:30px;
+}
+p{
+	background-color:paleturquoise;
+height:30px;
+}
+#d3{
+	background-color:paleturquoise;
+height:30px;
+}

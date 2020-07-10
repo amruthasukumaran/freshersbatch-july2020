@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+p{
+	border:1px solid red;
+	font-size:19px;
+	margin:0;
+}
+.note{
+	border:5px dotted lime;
+	
+}
+body{
+	border-left:2px solid cyan;
+	border-right:2px solid cyan;
+	
+}

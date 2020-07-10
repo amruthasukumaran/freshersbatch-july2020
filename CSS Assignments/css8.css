@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+#p1{
+	background-color:lightcyan;
+	border:5px solid black;
+	font-size:19px;
+	
+}
+
+#p2{
+	background-color:lightcyan;
+	border:3px solid black;
+	font-size:19px;
+	
+}
+
+#p3{
+	background-color:lightcyan;
+	border:1px solid black;
+	font-size:19px;
+	
+}
+#p4{
+	
+	border:15px solid lightcyan;
+	
+}
