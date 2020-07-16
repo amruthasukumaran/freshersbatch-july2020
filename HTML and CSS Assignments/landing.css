@@ -1,0 +1,73 @@
+
+body{
+    margin: 0;
+    margin-left: 0px;
+    margin-left: 0px;
+    height:100%;
+    text-align: center;
+}
+
+
+.head{
+    background-image: url('https://www.mahalekshmisilks.com/blog/wp-content/uploads/2018/01/mahalekshmi-silks-Silks-wedding-saree.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+}
+
+h1{
+    color:midnightblue;
+    
+    font-size: 100px;
+    font-family: 'Lucida Handwriting';
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+h2{
+    color:gold;
+    font-size: 30px;
+    font-family: 'Lucida Handwriting';
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.section-one{
+    background-color: plum;
+    font-size: 27px;
+    font-family: 'Lucida Handwriting';
+    color: crimson;
+    text-align: center;
+    padding: 0 1.5em;
+}
+
+.section-two{
+    background-color: darkblue;
+    display:flex;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+    
+.card{
+    background-color: darkgray;
+    
+}
+
+img{
+    display: block;
+    width: 100px;
+    height: auto;
+    
+}
+
+
+
+  .section-two div{
+    padding:20px;
+  }

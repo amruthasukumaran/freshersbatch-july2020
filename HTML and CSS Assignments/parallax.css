@@ -1,0 +1,109 @@
+
+body{
+    margin: 0;
+    height:100%;
+}
+.main{
+    background-image: url('https://live.staticflickr.com/8395/29729829905_4a9c27668c_b.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    color: whitesmoke;
+    letter-spacing:8px;
+    font-family: 'Comic Sans MS';
+}
+
+.description{
+    background-color: darkslategrey;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Script MT Bold';
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.wildlife{
+    background-image: url('https://www.ashokaholidays.com/wp-content/uploads/2019/07/Wayanard.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    color: darkgreen;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Lucida Handwriting';;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.tourism{
+    background-image: url('https://www.visitwayanad.in/wp-content/uploads/2016/10/chembra-peak-wayanad-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 90px;
+    font-family: 'Lucida Handwriting';;
+    font-style: italic;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    color: lightseagreen;
+}
+
+
+.wilddes{
+    background-color:darkolivegreen;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Script MT Bold';
+    font-style: italic;
+    color: darkgrey;
+
+}
+
+.tourdes{
+    background-color: darkslategrey;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Script MT Bold';
+    font-style: italic;
+    color: darkgrey;
+
+}
+
+.last{
+    background-image: url('https://i.pinimg.com/originals/c6/37/24/c637242c8ac39178ba22a331918cb822.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 90px;
+    font-family: 'Lucida Handwriting';
+    font-style: italic;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    color: silver;
+}
