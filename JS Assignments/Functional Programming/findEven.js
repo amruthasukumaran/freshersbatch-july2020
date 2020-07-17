@@ -1,13 +1,21 @@
-const find =(a)=> (value)=> a(value)
+function find(num,callback){
+  for(i=0;i<num.length;i++){
+    x= callback(num[i]);
+    if(x==true){
+      break;
+    }
+    
+  }
+  console.log(num[i]); 
+ // return x;
+}
+
 
 function isEven(num){
     return (num%2 ==0);
+    
 }
-arr=[1,3,5,4,2];
-var getResult=find(isEven);
-//const getElem= arr.find(isEven);
 
-console.log(getResult(3));
-console.log(getResult(4));
-console.log(getResult(43));
-console.log(arr.find(isEven));
+console.log(isEven(3));
+console.log(isEven(4));
+console.log(find([1,3,5,4,2],isEven));
