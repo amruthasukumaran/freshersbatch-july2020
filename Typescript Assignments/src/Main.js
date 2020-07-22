@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var AdminClass_1 = require("./AdminClass");
+var MenuClass_1 = require("./MenuClass");
+var RestaurantClass_1 = require("./RestaurantClass");
+var UserClass_1 = require("./UserClass");
+var r = new AdminClass_1.Admin();
+r.admin();
+var c = new MenuClass_1.Menu();
+c.menu();
+var a = new RestaurantClass_1.Restaurant();
+a.restaurant();
+var b = new UserClass_1.User();
+b.user();
