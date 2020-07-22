@@ -1,0 +1,31 @@
+body{
+    background-image:url('https://jooinn.com/images/banana-leaf-background-5.png');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    color: gray;
+    font-size: 30px;
+}
+
+button{
+    margin: 3%;
+    background-color:yellow;
+    border: none;
+    display: inline-block;
+    padding: 15px 32px;
+}
+
+h1{
+    color: brown;
+    font-size: 50px;
+    font-family: 'Lucida Handwriting';
+    margin-top: 15%;
+    font-weight: bold;
+    text-align: center;
+}
