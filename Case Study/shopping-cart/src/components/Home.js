@@ -12,23 +12,23 @@ const  Home = () => {
     return (
         <div className="container">
             <div className="image">
-            <Link to={'/products/id_1'}><img className="image-resize" src={womens2} alt="image1"/></Link>
+            <Link to={'/products'}><img className="image-resize" src={womens2} alt="image1"/></Link>
                 <h3>Women's Fashion</h3>
             </div>
             <div className="image">
-            <Link to={'/products/123'}><img className="image-resize" src={virat1} alt="image1"/></Link>
+            <Link to={'/shirts'}><img className="image-resize" src={virat1} alt="image1"/></Link>
                 <h3>Men's Fashion</h3>
             </div>
             <div className="image">
-            <Link to={'/products/123'}><img className="image-resize" src={cosmetics1} alt="image1"/></Link>
+            <Link to={'/cosmetics'}><img className="image-resize" src={cosmetics1} alt="image1"/></Link>
                 <h3>Cosmetics</h3>
             </div>
             <div className="image">
-            <Link to={'/products/123'}><img className="image-resize" src={gadgets3} alt="image1"/></Link>
+            <Link to={'/gadgets'}><img className="image-resize" src={gadgets3} alt="image1"/></Link>
                 <h3>Electronics</h3>
             </div>
             <div className="image">
-            <Link to={'/products/123'}><img className="image-resize" src={homedecor} alt="image1"/></Link>
+            <Link to={'/homedecor'}><img className="image-resize" src={homedecor} alt="image1"/></Link>
                 <h3>Home Decor</h3>
             </div>
 

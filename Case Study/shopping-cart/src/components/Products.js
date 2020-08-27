@@ -48,6 +48,7 @@ const  Products = (props) => {
                 <h3>60 Rs</h3>
                 <a onClick={() => props.addToCart('dress6') } className="addToCart cart6" href="#">Add to Cart</a>
             </div>
+           
             
         </div>
     )

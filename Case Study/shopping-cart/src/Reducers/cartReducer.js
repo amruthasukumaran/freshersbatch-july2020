@@ -45,6 +45,111 @@ const initialState = {
             price: 60.00,
             numbers: 0,
             inCart: false
+        },
+        shirt1: {
+            name: "shirt1",
+            tagName: 'shirt1',
+            price: 10.00,
+            numbers: 0,
+            inCart: false
+        },
+        shirt2: {
+            name: "shirt2",
+            tagName: 'shirt2',
+            price: 20.00,
+            numbers: 0,
+            inCart: false
+        },
+        shirt3: {
+            name: "shirt3",
+            tagName: 'shirt3',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
+        },
+        cosmetics11: {
+            name: "cosmetics11",
+            tagName: 'cosmetics11',
+            price: 10.00,
+            numbers: 0,
+            inCart: false
+        },
+        cosmetics12: {
+            name: "cosmetics12",
+            tagName: 'cosmetics12',
+            price: 20.00,
+            numbers: 0,
+            inCart: false
+        },
+        cosmetics13: {
+            name: "cosmetics13",
+            tagName: 'cosmetics13',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
+        },
+        cosmetics14: {
+            name: "cosmetics14",
+            tagName: 'cosmetics14',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
+        },
+        homedecor1: {
+            name: "homedecor1",
+            tagName: 'homedecor1',
+            price: 10.00,
+            numbers: 0,
+            inCart: false
+        },
+        homedecor2: {
+            name: "homedecor2",
+            tagName: 'homedecor2',
+            price: 20.00,
+            numbers: 0,
+            inCart: false
+        },
+        homedecor3: {
+            name: "homedecor3",
+            tagName: 'homedecor3',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
+        },
+        homedecor4: {
+            name: "homedecor4",
+            tagName: 'homedecor4',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
+        },
+        gadgets1: {
+            name: "gadgets1",
+            tagName: 'gadgets1',
+            price: 10.00,
+            numbers: 0,
+            inCart: false
+        },
+        gadgets2: {
+            name: "gadgets2",
+            tagName: 'gadgets2',
+            price: 20.00,
+            numbers: 0,
+            inCart: false
+        },
+        gadgets3: {
+            name: "gadgets3",
+            tagName: 'gadgets3',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
+        },
+        gadgets4: {
+            name: "gadgets4",
+            tagName: 'gadgets4',
+            price: 30.00,
+            numbers: 0,
+            inCart: false
         }
     }
 }
