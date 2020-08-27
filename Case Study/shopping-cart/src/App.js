@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 import Cart from './components/Cart';
+import Products from './components/Products';
 import Header from './components/Header';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -18,6 +19,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
            <Header/>
            <Switch>                                              //Render one component at a time
              <Route exact path="/" component={Home}/>
+             <Route exact path="/products/id_1" component={Products}/>
              <Route path="/cart" component={Cart}/>
              <Route path="/signup" component={Signup}/>
              <Route path="/login" component={Login}/>
