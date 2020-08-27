@@ -1,41 +1,34 @@
-import React from 'react';
-import {Component} from 'react';
-import Products from './components/Products';
-import Profile from './components/Profile';
-import Order from './components/Order';
+import React, { Component } from 'react';
+import './styles.css';
 import Cart from './components/Cart';
-import Wallet from './components/Wallet';
+import Header from './components/Header';
+import Signup from './components/Signup';
 import Login from './components/Login';
-import Home from './components/Home';
- 
 
-class App extends Component {
-    render(){
+import Home from './components/Home';
+import { Provider } from 'react-redux';
+import store from './store';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+ function App() {
     return (
-    <div className="grid-container">
-      <header>
-        <a href='/'>Your Choice Shopping</a>
-                
-      </header>
-      <main>
-        <div className="content">
-          <div className="main">
-           <Products/>
-           <Profile/>
-           <Cart/>
-           <Login/>
-           <Wallet/>
-           <Order/>
-           <Home/>
-          </div>
-          <div className="sidebar">Cart</div>
-        </div>
-      </main>
-      <footer>
-        Yoooo
-      </footer>
-    </div>
-  );}
-}
+     <Provider store={store}>
+       <div className="App">
+         <BrowserRouter>
+           <Header/>
+           <Switch>                                              //Render one component at a time
+             <Route exact path="/" component={Home}/>
+             <Route path="/cart" component={Cart}/>
+             <Route path="/signup" component={Signup}/>
+             <Route path="/login" component={Login}/>
+            
+           </Switch>
+           
+         </BrowserRouter>
+      
+     </div>
+     </Provider>
+    )
+  }
 
 export default App;
