@@ -18,6 +18,29 @@ mongoose
   .catch((error) => console.log(error.reason));
 
 const app = express();
+//
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+
+const swaggerOptions = {
+  swaggerDefinition: {
+    info: {
+      title: 'Shopping API',
+      description: "Shopping API information",
+      contact: {
+        name: "Amazing Developer"
+      },
+      servers: ["http://localhost:5000"]
+    }
+  },
+  apis: ["./backend/routes/orderRoute.js"]
+}; 
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup (swaggerDocs));//
+
+
+
 app.use(bodyParser.json());
 app.use('/api/uploads', uploadRoute);
 app.use('/api/users', userRoute);

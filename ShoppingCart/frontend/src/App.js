@@ -43,6 +43,8 @@ function App() {
                   <li>
                   <Link to="/category/Men's ">Men's </Link><br /><br/>
                   <Link to="/category/Women's ">Women's </Link><br/><br/>
+                  <Link to="/category/Cosmetics ">Cosmetics</Link><br/><br/>
+                  <Link to="/category/Electronics ">Electronics</Link><br/><br/>
                   <Link to="/category/HomeDecor ">HomeDecor </Link>
                   </li>
                 </ul>
