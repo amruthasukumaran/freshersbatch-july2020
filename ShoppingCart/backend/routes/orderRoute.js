@@ -27,9 +27,15 @@ router.get("/mine", isAuth, async (req, res) => {
 
 /**
  * @swagger
- * /5f5056f1a88fa9292c4b411a:
+ * /{id}:
  *  get:
  *    description: Get by id
+ *    parameters:
+ *          - name: id
+ *            description: id to get
+ *            in: path
+ *            type: string
+ *            required: true 
  *       
  *    responses:
  *       '200':
@@ -51,6 +57,12 @@ router.get("/:id", isAuth, async (req, res) => {
  * /{id}:
  *  delete:
  *    description: This order will be deleted
+ *    parameters:
+ *          - name: id
+ *            description: id to get
+ *            in: path
+ *            type: string
+ *            required: true    
  *       
  *    responses:
  *       '200':
@@ -72,7 +84,7 @@ router.delete("/:id", isAuth, isAdmin, async (req, res) => {
  * @swagger
  * /:
  *  post:
- *    description: Create a new order
+ *    description: Get by id
  *       
  *    responses:
  *       '200':
@@ -96,14 +108,17 @@ router.post("/", isAuth, async (req, res) => {
   res.status(201).send({ message: "New Order Created", data: newOrderCreated });
 });
 
-
-
 /**
  * @swagger
- * /5f5056f1a88fa9292c4b411a/pay:
+ * /{id}/pay:
  *  put:
- *    description: This is update an order
- *       
+ *    description: Get by id
+ *    parameters:
+ *          - name: id
+ *            description: id to get
+ *            in: path
+ *            type: string
+ *            required: true    
  *    responses:
  *       '200':
  *         description: A successful response

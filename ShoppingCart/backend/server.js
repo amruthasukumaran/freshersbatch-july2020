@@ -33,7 +33,7 @@ const swaggerOptions = {
       servers: ["http://localhost:5000"]
     }
   },
-  apis: ["./backend/routes/orderRoute.js"]
+  apis: ["./backend/routes/orderRoute.js", "./backend/routes/productRoute.js"]
 }; 
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);

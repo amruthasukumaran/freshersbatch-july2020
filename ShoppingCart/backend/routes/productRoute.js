@@ -4,6 +4,17 @@ import { isAuth, isAdmin } from '../util';
 
 const router = express.Router();
 
+/**
+ * @swagger
+ * /:
+ *  get:
+ *    description: Use to request all customers
+ *    responses:
+ *       '200':
+ *         description: A successful response
+ */
+
+
 router.get('/', async (req, res) => {
   const category = req.query.category ? { category: req.query.category } : {};
   const searchKeyword = req.query.searchKeyword
@@ -25,6 +36,26 @@ router.get('/', async (req, res) => {
   res.send(products);
 });
 
+
+
+/**
+ * @swagger
+ * /{id}:
+ *  get:
+ *    description: Get by id
+ *    parameters:
+ *          - name: id
+ *            description: id to get
+ *            in: path
+ *            type: string
+ *            required: true 
+ *       
+ *    responses:
+ *       '200':
+ *         description: A successful response
+ */
+
+
 router.get('/:id', async (req, res) => {
   const product = await Product.findOne({ _id: req.params.id });
   if (product) {
@@ -33,6 +64,20 @@ router.get('/:id', async (req, res) => {
     res.status(404).send({ message: 'Product Not Found.' });
   }
 });
+
+/**
+ * @swagger
+ * /{id}/reviews:
+ *  post:
+ *    description: Create a review
+ *       
+ *    responses:
+ *       '200':
+ *         description: A successful response
+ */
+
+
+
 router.post('/:id/reviews', isAuth, async (req, res) => {
   const product = await Product.findById(req.params.id);
   if (product) {
@@ -55,6 +100,24 @@ router.post('/:id/reviews', isAuth, async (req, res) => {
     res.status(404).send({ message: 'Product Not Found' });
   }
 });
+
+/**
+ * @swagger
+ * /{id}:
+ *  put:
+ *    description: Edit product by an id
+ *    parameters:
+ *          - name: id
+ *            description: id to get
+ *            in: path
+ *            type: string
+ *            required: true    
+ *    responses:
+ *       '200':
+ *         description: A successful response
+ */
+
+
 router.put('/:id', isAuth, isAdmin, async (req, res) => {
   const productId = req.params.id;
   const product = await Product.findById(productId);
@@ -76,6 +139,25 @@ router.put('/:id', isAuth, isAdmin, async (req, res) => {
   return res.status(500).send({ message: ' Error in Updating Product.' });
 });
 
+
+/**
+ * @swagger
+ * /{id}:
+ *  delete:
+ *    description: This product will be deleted
+ *    parameters:
+ *          - name: id
+ *            description: id to get
+ *            in: path
+ *            type: string
+ *            required: true    
+ *       
+ *    responses:
+ *       '200':
+ *         description: A successful response
+ */
+
+
 router.delete('/:id', isAuth, isAdmin, async (req, res) => {
   const deletedProduct = await Product.findById(req.params.id);
   if (deletedProduct) {
@@ -85,6 +167,19 @@ router.delete('/:id', isAuth, isAdmin, async (req, res) => {
     res.send('Error in Deletion.');
   }
 });
+
+
+/**
+ * @swagger
+ * /:
+ *  post:
+ *    description: Get by id
+ *       
+ *    responses:
+ *       '200':
+ *         description: A successful response
+ */
+
 
 router.post('/', isAuth, isAdmin, async (req, res) => {
   const product = new Product({
